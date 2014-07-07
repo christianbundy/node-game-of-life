@@ -1,6 +1,6 @@
 var Life = require('./life');
 
-test = function (name, start, end) {
+var test = function (name, start, end) {
   Life.plane = start;
   Life.tick();
 
@@ -11,10 +11,10 @@ test = function (name, start, end) {
         failure = true;
       }
     });
-  })
+  });
 
   if (!failure) {
-    console.log('PASS: ' + name)
+    console.log('PASS: ' + name);
   } else {
     console.error('FAIL: ' + name);
   }
